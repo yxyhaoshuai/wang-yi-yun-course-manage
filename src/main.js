@@ -4,6 +4,7 @@ import router from './router';
 import ElementPlus from 'element-plus';
 import '@/style/normalize.css'; // 清除默认样式
 import 'element-plus/dist/index.css';
+import '@/assets/icon/iconfont.css';
 import * as ElementPlusIconsVue from '@element-plus/icons-vue';
 
 const app = createApp(App);
