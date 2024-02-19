@@ -57,7 +57,7 @@ const submitForm = () => {
     if (valid) {
       console.log("在这里处理登录或注册逻辑");
     } else {
-      ElMessage.error('请检查填写信息！')
+      ElMessage.error('请检查填写的信息！')
       return false;
     }
   });
