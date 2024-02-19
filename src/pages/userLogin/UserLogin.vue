@@ -106,8 +106,8 @@ const submitForm = () => {
         <el-button type="primary" @click="submitForm">{{ isLogin ? '登录' : '注册' }}</el-button>
       </div>
       <div class="register">
-        <el-link v-if="isLogin" class="text" @click="clickLink">注册账号，入驻严选云课堂。</el-link>
-        <el-link v-else class="bac" @click="clickLink">&lt; 返回</el-link>
+        <el-link type="primary" v-if="isLogin" class="text" @click="clickLink">注册账号，入驻严选云课堂</el-link>
+        <el-link type="primary" v-else class="bac" @click="clickLink">&lt; 返回</el-link>
       </div>
     </div>
   </div>
