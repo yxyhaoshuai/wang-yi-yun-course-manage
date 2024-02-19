@@ -9,5 +9,8 @@ module.exports = defineConfig({
         additionalData: `@import "@/style/theme.less";`
       }
     }
-  }
+  },
+  devServer: {
+    port: 3002, // 端口号
+  },
 })
