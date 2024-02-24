@@ -8,7 +8,7 @@ axios.defaults.baseURL = BaseURL
 // 2. 业务植入
 // 3. 统一API
 export default function ajax(url, data={}, method="get") {
-    return new Promise((resolve, reject)=>{
+    return new Promise((resolve)=>{
         if (method.toLowerCase() === "get") {
             axios.get(url, {
                 params: data

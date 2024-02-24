@@ -68,7 +68,7 @@ const submitForm = () => {
 <template>
   <div class="login-panel">
     <div class="login-panel-center">
-      <div class="logo">严选云课堂后台管理系统</div>
+      <div class="logo">民大云课堂后台管理系统</div>
       <el-form
           :rules="formRules"
           v-if="isLogin"
@@ -106,7 +106,7 @@ const submitForm = () => {
         <el-button type="primary" @click="submitForm">{{ isLogin ? '登录' : '注册' }}</el-button>
       </div>
       <div class="register">
-        <el-link type="primary" v-if="isLogin" class="text" @click="clickLink">注册账号，入驻严选云课堂</el-link>
+        <el-link type="primary" v-if="isLogin" class="text" @click="clickLink">注册账号，入驻民大云课堂</el-link>
         <el-link type="primary" v-else class="bac" @click="clickLink">&lt; 返回</el-link>
       </div>
     </div>

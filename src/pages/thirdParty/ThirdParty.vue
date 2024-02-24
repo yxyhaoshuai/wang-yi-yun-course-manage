@@ -45,7 +45,7 @@ const currentTime = useCurrentTime();
 <template>
   <div class="home-layout">
     <div class="left">
-      <div class="logo"><img src="@/assets/logo.png" alt="">{{ isCollapse ? '' : '严选云课堂'}}</div>
+      <div class="logo"><img src="@/assets/logo.png" alt="">{{ isCollapse ? '' : '民大云课堂'}}</div>
       <el-menu
           default-active="2"
           :collapse="isCollapse"

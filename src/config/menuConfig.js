@@ -4,32 +4,23 @@ const menuItems =  [
         title: "网站前台配置",
         icon: "xxx",
         route: "/manage/web_config",
+        crumbsJump: '/manage/web_config/home',
         children: [
             {
                 id: '2',
-                title: "网站首页配置",
+                title: "前台首页配置",
                 route: "/manage/web_config/home",
-                icon: "icon-histogram"
-            },
-            {
-                id: '3',
-                title: "用户统计",
-                route: "/manage/web_config/line",
-                icon: "icon-61"
-            },
-            {
-                id: '4',
-                title: "评论统计",
-                route: "/manage/web_config/pie",
-                icon: "icon-bingzhuangtu"
+                icon: "icon-histogram",
+                crumbsJump: '/manage/web_config/home'
             }
         ]
     },
+
     {
-        id: '5',
-        title: "第二个",
-        icon: "xxx2",
-        route: "/manage/xxxx",
+        id: '3',
+        title: "没有children的例子",
+        icon: "xxx",
+        route: "/xxx"
     }
 ]
 export default menuItems
