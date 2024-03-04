@@ -1,21 +1,21 @@
 
 <script setup>
 import menuItems from "@/config/menuConfig";
-import {onMounted, onUnmounted, reactive, ref} from "vue";
+import {onMounted, onUnmounted, ref} from "vue";
 import router from "@/router";
 const isCollapse = ref(false);
 
 
-const form = reactive({
-  name: '',
-  region: '',
-  date1: '',
-  date2: '',
-  delivery: false,
-  type: [],
-  resource: '',
-  desc: '',
-})
+// const form = reactive({
+//   name: '',
+//   region: '',
+//   date1: '',
+//   date2: '',
+//   delivery: false,
+//   type: [],
+//   resource: '',
+//   desc: '',
+// })
 
 const clickMenu = (route) => {
   console.log('Trying to navigate to:', route); // 确保这是你期望的路径

@@ -286,6 +286,48 @@ const options = [
       </el-tabs>
 
     </el-form-item>
+    <el-form-item label="广告小卡片：">
+      <template #default="">
+        <el-upload action="#" list-type="picture-card" :auto-upload="false">
+          <el-icon>
+            <Plus/>
+          </el-icon>
+
+          <template #file="{ file }">
+            <div>
+              <img class="el-upload-list__item-thumbnail" :src="file.url" alt=""/>
+              <span class="el-upload-list__item-actions">
+                    <span
+                        class="el-upload-list__item-preview"
+                        @click="handlePictureCardPreview(file)"
+                    >
+                      <el-icon><zoom-in/></el-icon>
+                    </span>
+                    <span
+                        v-if="!disabled"
+                        class="el-upload-list__item-delete"
+                        @click="handleDownload(file)"
+                    >
+                      <el-icon><Download/></el-icon>
+                    </span>
+                    <span
+                        v-if="!disabled"
+                        class="el-upload-list__item-delete"
+                        @click="handleRemove(file)"
+                    >
+                      <el-icon><Delete/></el-icon>
+                    </span>
+                  </span>
+            </div>
+          </template>
+        </el-upload>
+
+        <el-dialog v-model="dialogVisible">
+          <img w-full :src="dialogImageUrl" alt="Preview Image"/>
+        </el-dialog>
+
+      </template>
+    </el-form-item>
   </el-form>
   <el-dialog v-model="dialogFormVisible" :title="addClassify.formType === '1' ? '增加一级分类': addClassify.formType === '2' ? '增加二级分类' : '增加三级分类'" width="500">
     <el-form :model="form" label-width="auto" style="max-width: 600px">

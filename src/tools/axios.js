@@ -1,6 +1,6 @@
 import axios from "axios";
 import { ElMessage } from 'element-plus'
-import {BaseURL} from "../config/serverConfig";
+import {BaseURL} from "@/config/serverConfig";
 
 axios.defaults.baseURL = BaseURL
 

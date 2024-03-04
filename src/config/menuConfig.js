@@ -12,6 +12,12 @@ const menuItems =  [
                 route: "/manage/web_config/home",
                 icon: "icon-histogram",
                 crumbsJump: '/manage/web_config/home'
+            },            {
+                id: '3',
+                title: "官方通知",
+                route: "/manage/web_config/platform_notification",
+                icon: "icon-histogram",
+                crumbsJump: '/manage/web_config/platform_notification'
             }
         ]
     },

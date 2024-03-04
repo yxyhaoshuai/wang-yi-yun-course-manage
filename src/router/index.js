@@ -20,6 +20,11 @@ const routes = [
                 path: 'web_config/course_management',
                 name: '课程管理页',
                 component: () => import('@/componentsPage/courseManagement/CourseManagement.vue')
+            },
+            {
+                path: 'web_config/platform_notification',
+                name: '平台通知',
+                component: () => import('@/componentsPage/platformNotification/PlatformNotification.vue')
             }
         ],
     },
