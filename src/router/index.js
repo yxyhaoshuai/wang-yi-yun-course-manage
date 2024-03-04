@@ -15,6 +15,11 @@ const routes = [
                 path: 'web_config/home',
                 name: '网站首页配置',
                 component: () => import('@/componentsPage/homeConfig/HomeConfig.vue')
+            },
+            {
+                path: 'web_config/course_management',
+                name: '课程管理页',
+                component: () => import('@/componentsPage/courseManagement/CourseManagement.vue')
             }
         ],
     },

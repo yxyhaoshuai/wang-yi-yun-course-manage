@@ -9,7 +9,18 @@ const editableTabsValue = ref('1')
 const editableTabsValue2 = ref('3')
 const editableTabsValue3 = ref('7')
 
+const dialogFormVisible = ref(false)
 
+const addClassTab = (formType)=>{
+  dialogFormVisible.value = true
+  if (formType === 1) {
+    addClassify.formType = '1'
+  } else if (formType === 2) {
+    addClassify.formType = '2'
+  } else if (formType === 3) {
+    addClassify.formType = '3'
+  }
+}
 const editableTabs = reactive([
   {
     title: '1',
@@ -80,6 +91,15 @@ const editableTabs = reactive([
     ],
   },
 ])
+
+const addClassify = reactive({
+  formType: '',
+  classifyName: '',
+})
+
+const submitForm = ()=> {
+  console.log("在这里提交表单")
+}
 
 const tableData = [
   {
@@ -222,6 +242,7 @@ const options = [
           type="card"
           editable
           class="demo-tabs"
+          @edit="addClassTab(1)"
       >
         <el-tab-pane
             v-for="item in editableTabs"
@@ -234,6 +255,7 @@ const options = [
               type="card"
               editable
               class="demo-tabs"
+              @edit="addClassTab(2)"
           >
             <el-tab-pane
                 v-for="item2 in item.children"
@@ -246,6 +268,7 @@ const options = [
                   type="card"
                   editable
                   class="demo-tabs"
+                  @edit="addClassTab(3)"
               >
                  <el-tab-pane
                      v-for="item3 in item2.children"
@@ -264,6 +287,24 @@ const options = [
 
     </el-form-item>
   </el-form>
+  <el-dialog v-model="dialogFormVisible" :title="addClassify.formType === '1' ? '增加一级分类': addClassify.formType === '2' ? '增加二级分类' : '增加三级分类'" width="500">
+    <el-form :model="form" label-width="auto" style="max-width: 600px">
+      <el-form-item>
+        <el-input
+            v-model="addClassify.classifyName"
+            placeholder="请输入分类名"
+        />
+      </el-form-item>
+    </el-form>
+    <template #footer>
+      <div class="dialog-footer">
+        <el-button @click="dialogFormVisible = false">取消</el-button>
+        <el-button type="primary" @click="submitForm">
+          确定
+        </el-button>
+      </div>
+    </template>
+  </el-dialog>
 </template>
 
 <script>
