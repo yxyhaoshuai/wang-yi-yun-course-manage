@@ -1,0 +1,277 @@
+.header{
+  width: 100%;
+  height: 49px;
+  background: #202329;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, .06);
+  .bx{
+    display: flex;
+    height: 49px;
+    width: 1184px;
+    margin: 0 auto;
+    position: relative;
+    .logo{
+      width: 104px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &>img{
+        width: 104px;
+      }
+    }
+    .your-position{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 24px;
+      .your-position-content{
+        &>i{
+          font-size: 16px;
+          color: #00bebd;
+        }
+        .city{
+          margin-left: 4px;
+          color: #00bebd;
+          font-size: 14px;
+        }
+        .change-city{
+          margin-left: 10px;
+          font-size: 12px;
+          color: #ffffff;
+        }
+      }
+    }
+    .module-list{
+      display: flex;
+      align-items: center;
+      margin-left: 14px;
+      &>span{
+        margin: 0 6px 0 6px;
+        font-size: 14px;
+        color: #ffffff;
+        a{
+          text-decoration: none; /* 去除下划线 */
+          font-weight: normal; /* 去除可能的粗体 */
+          background: none; /* 去除背景色 */
+          border: none; /* 去除边框 */
+          padding: 0; /* 去除内边距 */
+          margin: 0; /* 去除外边距 */
+          display: inline; /* 确保不改变元素的显示方式 */
+          font-size: 14px;
+          color: #ffffff;
+          transition: all 0.2s linear;
+          &:hover{
+            color: #00bebd!important;
+          }
+        }
+        span{
+          margin: 0 2px 0 2px;
+        }
+        .active{
+          color: #00bebd!important;
+        }
+      }
+    }
+    .user{
+      display: flex;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      font-size: 14px;
+      color: #ffffff;
+      height: 100%;
+      .message{
+        margin: 0 10px 0 10px;
+        position: relative;
+        .message-text{
+          transition: all 0.2s linear;
+          &:hover{
+            color: #00bebd!important;
+            cursor: pointer;
+          }
+        }
+        .message-value{
+          position: absolute;
+          top: -8px;
+          right: -14px;
+          background: #fe574a;
+          border-radius: 9px 9px 9px 0;
+          width: 14px;
+          height: 16px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 12px;
+        }
+      }
+      .curriculum-vitae{
+        margin: 0 16px 0 10px;
+        position: relative;
+        .curriculum-vitae-text{
+          transition: all 0.2s linear;
+          &:hover{
+            color: #00bebd!important;
+            cursor: pointer;
+          }
+
+        }
+        .curriculum-vitae-new{
+          position: absolute;
+          height: 14px;
+          padding: 0 4px;
+          line-height: 13px;
+          top: -8px;
+          right: -30px;
+          background-color: #ef505e;
+          color: #fff;
+          font-size: 12px;
+          border-radius: 7px;
+        }
+      }
+      .name{
+        display: flex;
+        align-items: center;
+        padding: 4px;
+        border-radius: 6px;
+        transition: all 0.2s linear;
+        margin-left: 10px;
+        &:hover{
+          background: rgba(255, 255, 255, .2);
+          cursor: pointer;
+        }
+        span{
+          margin: 0 8px 0 0;
+        }
+
+        &>img{
+          width: 28px;
+          height: 28px;
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+
+}
+.main-page{
+  .spokesperson{
+    height: 120px;
+    background-color: #00b4b3;
+    .bx{
+      width: 1184px;
+      margin: 0 auto;
+      &>img{
+        height: 120px;
+      }
+    }
+  }
+  .search-box{
+    background-color: #ef505e;
+    .search-box-bx{
+      width: 1184px;
+      margin: 0 auto;
+      background-color: #20202b;
+      display: flex;
+      justify-content: center;
+      .search-div{
+        width: 900px;
+        height: 54px;
+        background-color: #00bebd;
+        margin-top: 24px;
+        box-shadow: 0 10px 30px 0 rgba(153, 153, 153, .2);
+        border-radius: 10px;
+        overflow: hidden;
+        .search-body{
+          display: flex;
+          height: 100%;
+          .position{
+            width: 784px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            border: 2px solid #00bebd;
+            border-radius: 10px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            position: relative;
+            span{
+              display: flex;
+              align-items: center;
+              margin: 0 18px 0 18px;
+              font-size: 16px;
+              color: #222222;
+              transition: all 0.2s linear;
+              height: 100%;
+              &:hover{
+                color: #00bebd;
+                cursor: pointer;
+                i{
+                  color: #00bebd;
+                  cursor: pointer;
+                }
+              }
+              &>i{
+                font-size: 8px;
+                margin-left: 8px;
+                color: #222222;
+                transition: all 0.2s linear;
+              }
+            }
+            input{
+              flex: 1;
+              height: 100%;
+              -webkit-appearance: none; /* 去除 Webkit 浏览器的默认样式 */
+              -moz-appearance: none; /* 去除 Firefox 的默认样式 */
+              appearance: none; /* 去除其他浏览器的默认样式 */
+              border: none; /* 去除边框 */
+              outline: none; /* 去除焦点轮廓 */
+              background: none; /* 去除背景 */
+              padding: 0 0 0 12px; /* 去除内边距 */
+              margin: 0; /* 去除外边距 */
+              font-size: 16px;
+            }
+            input::placeholder {
+              color: #999999;
+            }
+            .map{
+              display: flex;
+              position: absolute;
+              right: 24px;
+              align-items: center;
+              &:hover{
+                cursor: pointer;
+                .map-text{
+                  color: #00bebd;
+                }
+                i{
+                  color: #00bebd;
+                }
+              }
+              &>i{
+                font-size: 22px;
+                color: #888888;
+                transition: all 0.2s linear;
+              }
+              .map-text{
+                font-size: 16px;
+                margin: 0 0 0 4px;
+                color: #333333;
+                transition: all 0.2s linear;
+              }
+            }
+          }
+          .search-button{
+            background: #00bebd;
+            font-size: 20px;
+            font-weight: 700;
+            width: 116px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
