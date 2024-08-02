@@ -166,13 +166,13 @@
     }
   }
   .search-box{
-    background-color: #ef505e;
     .search-box-bx{
       width: 1184px;
       margin: 0 auto;
-      background-color: #20202b;
       display: flex;
       justify-content: center;
+      flex-direction: column;
+      align-items: center;
       .search-div{
         width: 900px;
         height: 54px;
@@ -272,6 +272,120 @@
           }
         }
       }
+      .hot-jobs{
+        height: 48px;
+        width: 900px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        .hot-jobs-text{
+          font-size: 14px;
+          color: #757575;
+        }
+        .tabs-title{
+          line-height: 20px;
+          padding: 2px 8px 2px 8px;
+          background-color: rgba(255,255,255,.8);
+          margin-left: 12px;
+          color: #00a6a7;
+          border-radius: 6px;
+          font-size: 14px;
+        }
+      }
     }
   }
+  .classify{
+    .bx{
+      height: 450px;
+      width: 1184px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+
+      .left{
+        width: 384px;
+        height: 100%;
+        color: #666;
+        position: relative;
+        z-index: 1002;
+        background: #fff;
+        border-radius: 12px;
+        padding: 6px 3px 6px 3px;
+        box-sizing: border-box;
+        .classify-list{
+          font-size: 16px;
+          font-weight: 500;
+          color: #222;
+          line-height: 22px;
+          margin-top: 0;
+          margin-bottom: 0;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          border-radius: 8px;
+          transition: all 0.2s linear;
+          &:hover{
+            box-shadow: 0 4px 16px 0 rgba(153,153,153,.2);
+            cursor: pointer;
+          }
+          .main-class{
+            margin-left: 18px;
+          }
+          .assistant-class{
+            margin-left: 20px;
+            font-size: 14px;
+            color: #666666;
+            font-weight: 400;
+          }
+          .iconfont{
+            font-size: 8px;
+            color: #cccccc;
+            transform: rotate(-90deg);
+            position: absolute;
+            right: 18px;
+          }
+        }
+        .paging{
+          border-top: 1px dashed #e6e6e6;
+          height: 46px;
+          margin-top: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .paging-value{
+            margin-left: 20px;
+            font-size: 12px;
+            color: #00a6a7;
+          }
+          .paging-button{
+            margin-right: 20px;
+            span{
+              background: rgba(0, 190, 189, .1);
+
+            }
+            .one{
+              i{
+                font-size: 10px;
+              }
+            }
+            .tow{
+              margin-left: 12px;
+              i{
+                font-size: 10px;
+              }
+            }
+          }
+        }
+      }
+      .ad-card{
+        width: 786px;
+        height: 100%;
+        background-color: #00bebd;
+        border-radius: 12px;
+      }
+    }
+  }
+}
+body{
+  background: #f2f4f7;
 }

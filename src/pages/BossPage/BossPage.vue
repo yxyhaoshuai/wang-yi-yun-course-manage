@@ -62,7 +62,86 @@
             <div class="search-button">搜索</div>
           </div>
         </div>
-        <div class="hot-jobs"></div>
+        <div class="hot-jobs">
+          <span class="hot-jobs-text">热门职位：</span>
+          <span class="tabs-title" v-for="(item,index) in jobTitles" :key="index">{{ item }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="classify">
+      <div class="bx">
+        <div class="left">
+          <p class="classify-list">
+            <span class="main-class">互联网/AI</span>
+            <span class="assistant-class">前端开发工程师</span>
+            <span class="assistant-class">技术美术</span>
+            <i class="iconfont icon-shixinjiantou-xiangshang-copy"></i>
+          </p>
+          <p class="classify-list">
+            <span class="main-class">互联网/AI</span>
+            <span class="assistant-class">前端开发工程师</span>
+            <span class="assistant-class">技术美术</span>
+            <i class="iconfont icon-shixinjiantou-xiangshang-copy"></i>
+          </p>
+          <p class="classify-list">
+            <span class="main-class">互联网/AI</span>
+            <span class="assistant-class">前端开发工程师</span>
+            <span class="assistant-class">技术美术</span>
+            <i class="iconfont icon-shixinjiantou-xiangshang-copy"></i>
+          </p>
+          <p class="classify-list">
+            <span class="main-class">互联网/AI</span>
+            <span class="assistant-class">前端开发工程师</span>
+            <span class="assistant-class">技术美术</span>
+            <i class="iconfont icon-shixinjiantou-xiangshang-copy"></i>
+          </p>
+          <p class="classify-list">
+            <span class="main-class">互联网/AI</span>
+            <span class="assistant-class">前端开发工程师</span>
+            <span class="assistant-class">技术美术</span>
+            <i class="iconfont icon-shixinjiantou-xiangshang-copy"></i>
+          </p>
+          <p class="classify-list">
+            <span class="main-class">互联网/AI</span>
+            <span class="assistant-class">前端开发工程师</span>
+            <span class="assistant-class">技术美术</span>
+            <i class="iconfont icon-shixinjiantou-xiangshang-copy"></i>
+          </p>
+          <p class="classify-list">
+            <span class="main-class">互联网/AI</span>
+            <span class="assistant-class">前端开发工程师</span>
+            <span class="assistant-class">技术美术</span>
+            <i class="iconfont icon-shixinjiantou-xiangshang-copy"></i>
+          </p>
+          <p class="classify-list">
+            <span class="main-class">互联网/AI</span>
+            <span class="assistant-class">前端开发工程师</span>
+            <span class="assistant-class">技术美术</span>
+            <i class="iconfont icon-shixinjiantou-xiangshang-copy"></i>
+          </p>
+          <p class="classify-list">
+            <span class="main-class">互联网/AI</span>
+            <span class="assistant-class">前端开发工程师</span>
+            <span class="assistant-class">技术美术</span>
+            <i class="iconfont icon-shixinjiantou-xiangshang-copy"></i>
+          </p>
+          <p class="classify-list">
+            <span class="main-class">互联网/AI</span>
+            <span class="assistant-class">前端开发工程师</span>
+            <span class="assistant-class">技术美术</span>
+            <i class="iconfont icon-shixinjiantou-xiangshang-copy"></i>
+          </p>
+          <p class="paging">
+            <span class="paging-value">3/3</span>
+            <span class="paging-button">
+              <span class="one"><i class="iconfont icon-shixinjiantou-xiangshang-copy"></i></span>
+              <span class="tow"><i class="iconfont icon-shixinjiantou-xiangshang-copy"></i></span>
+            </span>
+          </p>
+        </div>
+        <div class="ad-card">
+
+        </div>
       </div>
     </div>
   </div>
@@ -87,6 +166,16 @@ export default {
         { id: 7, title1: '有了', link1: 'lianjie9' },
         { id: 8, title1: '海外', link1: 'lianjie10' },
         { id: 9, title1: '无障碍专区', link1: 'lianjie11' }
+      ],
+      jobTitles : [
+        "前端开发工程师",
+        "javascript",
+        "java",
+        "Node.js",
+        "PHP",
+        ".NET",
+        "测试工程师",
+        "运维工程师"
       ]
     }
   }
